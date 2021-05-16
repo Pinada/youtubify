@@ -1,0 +1,155 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="popup.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/classic.min.css" />
+    <!-- 'classic' theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/monolith.min.css" />
+    <!-- 'monolith' theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/nano.min.css" />
+    <!-- 'nano' theme -->
+
+</head>
+
+
+
+<body>
+    <div id="main">
+
+        <div class="containerLogo">
+            <div>
+                <div id="logo"></div>
+
+
+            </div>
+        </div>
+        <div class="mainContent">
+            <div class="container">
+                <div class="columnColorPicker">
+                    <div class="color-picker">Primary Color</div>
+                </div>
+                <div class="columnColorPicker">
+                    <div class="color-picker">
+                        <div id="colorPicker1"></div>
+                    </div>
+                    <!-- <input type="color" class="color-picker" name="head" value="#e66465"> -->
+                </div>
+            </div>
+            <div class="container">
+                <div class="columnColorPicker">
+                    <div class="color-picker">Secondary Color</div>
+                </div>
+                <div class="columnColorPicker">
+                    <div class="color-picker">
+                        <div id="colorPicker2"></div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="container">
+                <div class="columnColorPicker">
+                    <div class="color-picker">Primary Background Color</div>
+                </div>
+                <div class="columnColorPicker">
+                    <div class="color-picker">
+                        <div id="colorPicker3"></div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="container">
+                <div class="columnColorPicker">
+                    <div class="color-picker">Secondary Background Color</div>
+                </div>
+                <div class="columnColorPicker">
+                    <div class="color-picker">
+                        <div id="colorPicker4"></div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="columnColorPicker">
+                    <div class="color-picker">Icon Color</div>
+                </div>
+                <div class="columnColorPicker">
+                    <div class="color-picker">
+                        <div id="colorPicker5"></div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="container">
+                <div class="columnColorPicker">
+                    <div class="color-picker">Main Text Color</div>
+                </div>
+                <div class="columnColorPicker">
+                    <div class="color-picker">
+                        <div id="colorPicker6"></div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="columnColorPicker">
+                    <div class="color-picker">Text Font</div>
+                </div>
+                <div class="columnColorPicker">
+                    <div class="color-picker">
+                        <select id="fontSelector">
+                            <option value="'Roboto', sans-serif">Roboto</option>
+                            <option value="'Poppins', sans-serif">Poppins</option>
+                            <option value="'Source Sans Pro', sans-serif">Source Sans Pro</option>
+                            <option value="'Nunito', sans-serif">Nunito</option>
+
+                            <!-- <option value="audi">Audi</option> -->
+                        </select>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="columnColorPicker">
+                    <h4 style="padding-left:25px;padding-top:10px;" id="theme">Themes</h4>
+                </div>
+
+                <div class="columnColorPicker">
+                    <input type="radio" name="theme" value="Original"> Original<br>
+                    <input type="radio" name="theme" value="Alien Invasion"> Alien Invasion<br>
+
+
+
+                    <!-- <div class="columnColorPicker">
+                        <input type="radio" name="theme" value="Clean"> Clean Red<br>
+
+
+
+                    </div> -->
+                </div>
+
+            </div>
+
+
+
+            <button class="button">Advanced Customisation</button>
+
+
+
+
+
+        </div>
+
+
+        <script type="application/javascript" src="../browser-polyfill.js"></script>
+        <script src=" ../jquery/jquery.js"></script>
+        <script src=" ../pickr-master/dist/pickr.js"></script>
+        <script src="popup-script.js"></script>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+{
+  "manifest_version": 2,
+  "name": "Youtubify",
+  "version": "1.2",
+
+  "description": "Customize youtube ! Change text, background and icons colors, fonts, choose between themes ! More to come. ",
+
+  "content_scripts": [
+    {
+      "run_at": "document_start",
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["jquery/jquery.js", "browser-polyfill.js", "content-script.js"]
+    }
+  ],
+  "permissions": [
+    "<all_urls>",
+    "activeTab",
+    "tabs",
+    "storage",
+    "webRequest",
+    "cookies"
+  ],
+  "background": {
+    "scripts": [
+      "jquery/jquery.js",
+      "browser-polyfill.js",
+      "background-script.js"
+    ]
+  },
+  "web_accessible_resources": ["images/*", "patterns/*"],
+  "browser_action": {
+    "browser_style": true,
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "icons/page-16.png",
+      "32": "icons/page-32.png"
+    }
+  }
+}
