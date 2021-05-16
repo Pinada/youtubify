@@ -2,7 +2,6 @@ let portFromCS;
 
 function connected(p) {
   portFromCS = p;
-  // portFromCS.postMessage({ color1: window.color1 });
   portFromCS.onMessage.addListener(function(m) {
     console.log("In background script");
   });
@@ -10,9 +9,7 @@ function connected(p) {
 
 browser.runtime.onConnect.addListener(connected);
 
-// browser.browserAction.onClicked.addListener(function() {
-//   portFromCS.postMessage({ greeting: "they clicked the button!" });
-// });
+
 
 function sendColors(request, sender, sendResponse) {
   request.color1
